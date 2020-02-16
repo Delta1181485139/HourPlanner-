@@ -1,0 +1,29 @@
+/* miniprogram/pages/plan/write.wxss */
+.target{
+  background-color: white;
+  border-radius: 50rpx;
+  font-size: 40rpx;
+  height: 60rpx;
+  width: 80%;
+  padding: 20rpx;
+  margin-top: 20rpx
+}
+.button{
+  background-color: #2dccc1;
+  border-radius: 80rpx;
+  margin-top: 80rpx;
+  width: 80%;
+  height: 80rpx;
+  font-size: 40rpx;
+  padding: 10rpx
+}
+.confirm{
+  background-color: #2dccc1;
+  height:50rpx;
+  width: 80rpx;
+  line-height: 40rpx;
+  padding: 0;
+  right: 10rpx;
+  top: 10rpx;
+  position: fixed;
+}

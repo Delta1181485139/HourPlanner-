@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "专注",
+  "navigationBarTextStyle": "white",
+  "backgroundTextStyle": "light",
+  "backgroundColor": "#353535",
+  "navigationBarBackgroundColor": "#353535",
+  "enablePullDownRefresh": false
+}

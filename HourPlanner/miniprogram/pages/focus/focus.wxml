@@ -1,0 +1,24 @@
+  <view class='chose'> 
+      <text class='text'>专注一会儿~</text>
+      <image src="{{imagePath}}" class="image"></image>
+      <canvas class="canvas" canvas-id="Canvas"></canvas>
+          <picker-view
+          class='picker'
+          value="{{value}}"
+          bindchange="bindChange"
+          bindtap='goToBeginninng'
+          bindtouchstart="bindtouchstart"
+          bindtouchmove="bindtouchmove"
+          >
+            <picker-view-column>
+            <view wx:for="{{timeChoosing}}" wx:key="{{value}}"style="line-height: 60rpx">{{item}}</view>
+            </picker-view-column>
+          </picker-view>
+      <button bindtap='goToBeginninng' class='but'></button>
+      <modal hidden="{{modelInput}}" title="输入时间（分钟）" bindcancel="cancelM" bindconfirm="confirmM" style='position: fixed;z-index: 2;'>
+        <input bindinput='userDefined' type='number'placeholder="在这里输入..." maxlength="3" focus="{{keyBoard}}"/>
+      </modal>
+  </view>
+
+
+

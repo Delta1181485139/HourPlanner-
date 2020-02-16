@@ -1,0 +1,99 @@
+<view  class='label'>
+    <text>静音</text>
+    <image  bindtap='press' class='point' src="{{isChose!='none'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='none'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label' style="margin-bottom: 20rpx;border-bottom: solid #eee 1rpx">
+    <text>震动</text>
+    <image  bindtap='press' class='point' src="{{isChose!='shake'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='shake'></image>
+  </view>
+  <text style="opacity: 0.5;font-size: 20rpx">温馨提示：在公共场所如自习室推荐静音或震动哦</text>
+  <view  class='label' style="margin-top: 20rpx;border-top: solid #eee 1rpx">
+    <text>Music Room After School</text>
+    <image  bindtap='press' class='point' src="{{isChose!='one'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='one'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label'>
+    <text>Snow Dream</text>
+    <image  bindtap='press' class='point' src="{{isChose!='two'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='two'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label'>
+    <text>Childhood Memory</text>
+    <image  bindtap='press' class='point' src="{{isChose!='three'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='three'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label'>
+    <text>The Sound of Silence</text>
+    <image  bindtap='press' class='point' src="{{isChose!='four'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='four'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label'>
+    <text>Moon Glow</text>
+    <image  bindtap='press' class='point' src="{{isChose!='five'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='five'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label'>
+    <text>Annie's Wonderland</text>
+    <image  bindtap='press' class='point' src="{{isChose!='six'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='six'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label'>
+    <text>Endless Horizon</text>
+    <image  bindtap='press' class='point' src="{{isChose!='seven'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='seven'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label'>
+    <text>In Love</text>
+    <image  bindtap='press' class='point' src="{{isChose!='eight'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='eight'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label'>
+    <text>Beyond the Memory</text>
+    <image  bindtap='press' class='point' src="{{isChose!='nine'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='nine'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label'>
+    <text>Take Me Hand</text>
+    <image  bindtap='press' class='point' src="{{isChose!='ten'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='ten'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label'>
+    <text>Rain</text>
+    <image  bindtap='press' class='point' src="{{isChose!='eleven'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='eleven'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label'>
+    <text>Rain After Summer</text>
+    <image  bindtap='press' class='point' src="{{isChose!='twelve'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='twelve'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label'>
+    <text>Never Forget</text>
+    <image  bindtap='press' class='point' src="{{isChose!='thirteen'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='thirteen'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label'>
+    <text>Song of Seria</text>
+    <image  bindtap='press' class='point' src="{{isChose!='fourteen'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='fourteen'></image>
+  </view>
+  <view class='line'></view>
+  <view  class='label' style="border-bottom: solid #eee 1rpx">
+    <text>Leshphon</text>
+    <image  bindtap='press' class='point' src="{{isChose!='fifteen'?'../../img/button1.png':'../../img/button2.png'}} " mode="aspectFill" id='fifteen'></image>
+  </view>
+  <audio src='http://music.163.com/song/media/outer/url?id=758079' id='one'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=3951353' id='two'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=3951150' id='three'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=3951384' id='four'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=3950050' id='five'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=3951435' id='six'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=3951739' id='seven'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=26127161' id='eight'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=5307982' id='nine'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=1329031194' id='ten'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=2324453' id='eleven'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=430685732' id='twelve'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=515888361' id='thirteen'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=5341584' id='fourteen'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=401249050' id='fifteen'></audio>

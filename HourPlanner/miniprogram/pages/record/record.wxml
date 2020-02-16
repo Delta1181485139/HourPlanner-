@@ -1,0 +1,38 @@
+<!--miniprogram/pages/record/record.wxml-->
+  <view style='display: flex;flex-direction: column;align-items: center;width: 100%;background-color:white;border-bottom: solid #eee 1rpx'>
+  <view class='hello'><text>  {{hello}}!</text></view>
+    <view class='userinfo-avatar'>      
+      <open-data type="userAvatarUrl"  bindgetuserinfo="onGotUserInfo"></open-data>
+    </view>
+    <open-data type="userNickName" lang="zh_CN"></open-data> 
+  </view>
+    <button class='button' bindtap='planshow' style='border-top: solid #eee 1rpx'>
+      <image  class='icon' src="../../img/planshow.png" mode="aspectFill"></image>
+      <text class='text'>已完成任务{{assignmentNum}}件</text>
+      <image  class='point' src="../../img/point.png" mode="aspectFill"></image>
+    </button><view class='line'></view>
+    <button class='button' bindtap='focusshow' style='margin:0;border-bottom: solid #eee 1rpx'>
+      <image  class='icon' src="../../img/focusshow.png" mode="aspectFill"></image>
+      <text class='text'>共专注了{{(focusDuration>=60?(focusDuration-focusDuration%60)/60+'小时'+focusDuration%60:focusDuration)}}分钟</text>
+      <image  class='point' src="../../img/point.png" mode="aspectFill"></image>
+    </button>
+    <button class='button' bindtap='setup' style='border-top: solid #eee 1rpx'>
+      <image  class='icon' src="../../img/setup.png" mode="aspectFill"></image>
+      <text class='text'>提示音设置</text>
+      <image  class='point' src="../../img/point.png" mode="aspectFill"></image>
+    </button><view class='line'></view>
+    <button class='button' style='margin:0' bindtap='help'>
+      <image  class='icon' src="../../img/help.png" mode="aspectFill"></image>
+      <text class='text'>帮助</text>
+      <image  class='point' src="../../img/point.png" mode="aspectFill"></image>
+    </button><view class='line'></view>
+    <button class='button' style='margin:0;border-bottom: solid #eee 1rpx' open-type="feedback">
+      <image  class='icon' src="../../img/about.png" mode="aspectFill"></image>
+      <text class='text'>意见反馈</text>
+      <image  class='point' src="../../img/point.png" mode="aspectFill"></image>
+    </button>
+      <button class='button' bindtap='share' open-type='share' style='border-top: solid #eee 1rpx;border-bottom: solid #eee 1rpx'>
+      <image  class='icon' src="../../img/share.png" mode="aspectFill"></image>
+      <text class='text'>分享</text>
+      <image  class='point' src="../../img/point.png" mode="aspectFill"></image>
+    </button>

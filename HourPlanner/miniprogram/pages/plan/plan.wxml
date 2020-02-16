@@ -1,0 +1,35 @@
+<!--miniprogram/pages/plan/plan.wxml -->
+<view class="swiper-tab">  
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="clickSwitch">待完成任务</view>  
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="clickSwitch">倒计时</view>  
+</view> 
+<swiper current='{{currentTab}}' bindchange='slideSwitch' style="height:{{windowsHeight-45}}px">
+ <swiper-item>
+  <view class='list'>
+    <view class='frame' wx:for='{{queue}}' wx:key='{{index}}' bindlongpress='longpress' data-id='{{item._id}}'>
+      <text style='margin-top:45rpx'>{{item.title}}</text>
+    </view>
+    <image src='../../img/add.png' class='add_img' bindtap='add_item' mode="aspectFill" hidden="{{three}}"></image>
+    <image src='../../img/bird.png' class='bird' mode="aspectFill" hidden="{{show}}"></image>
+    <text style='position: fixed;top:550rpx;opacity: 0.2' hidden="{{show}}">你还没有待完成任务，点击添加</text>
+  </view>
+ </swiper-item>
+ <!----------------------------------------------------------------------------------------------->
+<swiper-item>
+ <view wx:for='{{countdown}}' wx:key='{{index}}' bindlongpress='correct' data-id='{{item._id}}' class='text'>
+      <view hidden='{{!addCountdown}}'>
+        <text>
+还有</text><text style='color: red'>{{remain}}</text><text>天就</text>
+        <text style='color: red'>
+      {{item.target}}</text><text>了
+
+</text>
+      </view>
+</view>
+ <view class='list' bindlongpress='newCountdown' hidden='{{addCountdown}}'>
+  <image src='../../img/bg.png' class='bg' mode="aspectFill" hidden='{{isExist}}'></image>
+  <text>还没有任何倒计时哦</text>
+  <text>长按中心区域添加。</text>
+</view>
+</swiper-item>
+</swiper>

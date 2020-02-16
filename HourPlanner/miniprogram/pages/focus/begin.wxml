@@ -1,0 +1,23 @@
+<!--pages/focus/begin.wxml-->
+  <view class='chose'>
+    <text class='clk'>{{clock}}</text>
+    <canvas class="canvas" canvas-id="Canvas"></canvas>
+    <button bindtap='giveup' class='but'>{{end}}</button>
+    <audio src=''></audio>
+  </view>
+  <audio src='http://music.163.com/song/media/outer/url?id=758079' id='one'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=3951353' id='two'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=3951150' id='three'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=3951384' id='four'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=3950050' id='five'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=3951435' id='six'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=3951739' id='seven'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=26127161' id='eight'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=5307982' id='nine'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=1329031194' id='ten'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=2324453' id='eleven'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=430685732' id='twelve'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=515888361' id='thirteen'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=5341584' id='fourteen'></audio>
+  <audio src='http://music.163.com/song/media/outer/url?id=401249050' id='fifteen'></audio>
+

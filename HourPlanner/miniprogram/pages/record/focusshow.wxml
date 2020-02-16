@@ -1,0 +1,37 @@
+<!--miniprogram/pages/record/history.wxml-->
+<view class='table' style="border:double {{color}} 10rpx;">
+    <view>
+        <view class='date-show'>
+            <view class='lt-arrow' bindtap='lastMonth'>
+                <image src='../../img/oppoint.png' mode='aspectFit'></image>
+            </view>
+            <picker mode='date' bindchange="time">
+              {{year}}年{{month}}月
+            </picker>
+            <view class='rt-arrow' bindtap='nextMonth'>
+                <image src='../../img/point.png' mode='aspectFit'></image>
+            </view>
+        </view>
+    </view>
+    <view class='header'>
+        <view wx:for='{{date}}' wx:key='item.index' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}<view></view></view>
+    </view>
+    <view class='date-box' bindtouchstart="touchstart" bindtouchend="touchend">
+        <view wx:for='{{dateArr}}' wx:key='item.index' class='{{isToday == item.isToday ? "nowDay" : (item.duration>=200?"gold":(item.duration>=150?"orange":(item.duration>=100?"pink":(item.duration>=60?"purple":(item.duration>=30?"blue":(item.duration>=10?"green":""))))))}}' data-date='{{item.isToday}}' bindtap='chosing'> 
+            <view class='date-head'>
+                <view>{{item.dateNum}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class='table' style='text-align: center;background-color: {{color}};margin-top: 40rpx'>
+  专注了{{focusDuration}}分钟
+</view>
+<view style='text-align: center;margin-top: 40rpx；padding: 20rpx;margin: 80rpx;font-size: 30rpx;opacity:0.3'>
+  下拉可刷新并回到当前日期
+</view>
+<view class='account' wx:for='{{planShow}}' wx:key='{{index}}' style='white-space:pre-wrap' data-id='{{item._id}}' bindlongpress='del'>
+<text style="font-size:50rpx">{{item.title}}</text><text style='opacity: 0.5;' hidden="{{item.context!=''?false:true}}">
+备注：{{item.context}}
+</text>
+</view>

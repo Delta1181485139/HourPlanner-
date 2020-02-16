@@ -1,0 +1,21 @@
+<view class='column' style="white-space:pre-wrap">
+<view class='slice'>
+  1.<text>如何制定任务？                    </text>
+  <text style="font-size: 30rpx">
+    制定任务时，在计划栏目添加新任务，但总数不能超过3。长按任务可完成、编辑或删除。已完成的任务会保存在我的记录中。
+    </text>
+  2.<text>倒计时功能怎么用？   </text>
+<text style="font-size: 30rpx">
+      长按屏幕中央可以新建倒计时，事件及剩余时间会以醒目色显示。
+      </text>
+  3.<text>专注功能怎么用？                 </text>
+<text style="font-size: 30rpx">
+      在按钮中央拖动选择时间并开始后，必须反转手机才能记录专注的时间，否则计时会被打断，所有记录会保存在我的记录中。在提示音设置可以设置专注时间结束时的提示音。
+      </text>
+  </view>
+  <view class='slice' style="margin:0rpx">
+  <text>    
+  感谢使用小程序！开发者的初衷是希望人们能够在这趋于快节奏浮躁的生活中变得更有条理，能够在定下的事不过三件的原则下知道自己的当务之急，也希望人们有些时候真的能够在排除手机干扰的情况下专注一阵子。如果有任何指导或建议请联系邮箱：1181485139@qq.com
+  </text>
+    </view>
+</view>

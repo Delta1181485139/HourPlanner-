@@ -1,0 +1,10 @@
+<view class='account' wx:for='{{planShow}}' wx:key='{{index}}' style='white-space:pre-wrap'>
+<text style='border-bottom: solid 1rpx #6dd6c8;font-size: 25rpx;margin-bottom:20rpx'>   完成时间：{{item.date}}</text><text style="font-size: 40rpx">
+  {{item.title}}</text><text style='opacity: 0.5;'>
+  备注：{{item.context}}
+</text>
+<button class='delete' bindtap='del' data-id='{{item._id}}'>
+<image src='../../img/delete.png'  style='height: 50rpx;width:50rpx;' mode="aspectFill"></image>
+</button>
+</view>
+

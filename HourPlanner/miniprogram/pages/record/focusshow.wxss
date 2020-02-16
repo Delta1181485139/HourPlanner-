@@ -1,0 +1,170 @@
+.table{
+  background-color: #fff;
+  border-radius: 50rpx;
+  padding: 20rpx;
+  margin: 20rpx;
+}
+.date-show{
+    position: relative;
+    width: 250rpx;
+    font-family: PingFang-SC-Regular;
+    font-size: 40rpx;
+    color: #282828;
+    text-align: center;
+    margin: 59rpx auto 10rpx;
+}
+.lt-arrow,.rt-arrow{
+    position: absolute;
+    top: 1rpx;
+    width: 60rpx;
+    height: 60rpx;
+  padding-right: 0.6rem;
+}
+.lt-arrow image,.rt-arrow image{
+    width: 40rpx;
+    height: 40rpx;
+}
+.lt-arrow{
+    left: -110rpx;
+    /* transform: rotate(180deg); */
+}
+.rt-arrow{
+    right: -100rpx;
+}
+.header{
+    font-size: 0;
+    padding: 0 24rpx;
+}
+.header>view{
+    display: inline-block;
+    width: 14.285%;
+    color: #333;
+    font-size: 30rpx;
+    text-align: center;
+    border-bottom: 1px solid #D0D0D0;
+    padding: 39rpx 0;
+}
+.weekMark{
+    position: relative;
+}
+.weekMark view{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #0cd7bc;
+}
+.date-box{
+    font-size: 0;
+    padding: 10rpx 0;
+}
+.date-box>view{
+    position: relative;
+    display: inline-block;
+    width: 14.285%;
+    color: #020202;
+    font-size: 40rpx;
+    text-align: center;
+    vertical-align: middle;
+    margin: 15rpx 0;
+}
+.date-head{
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 26rpx;
+}
+.nowDay .date-head{
+    width: 60rpx;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background-color: #0cd7bc;
+    margin: 0 auto;
+}
+.gold .date-head{
+     width: 60rpx;
+    border-radius: 50%;
+    text-align: center;
+    color: gold;
+    font-weight: bolder;
+    font-size: 50rpx;
+    margin: 0 auto;
+}
+.orange .date-head{
+     width: 60rpx;
+    border-radius: 50%;
+    text-align: center;
+    color: orange;
+    font-weight: bolder;
+    font-size: 50rpx;
+    margin: 0 auto;
+}
+.pink .date-head{
+     width: 60rpx;
+    border-radius: 50%;
+    text-align: center;
+    color: hotpink;
+    font-weight: bolder;
+    font-size: 50rpx;
+    margin: 0 auto;
+}
+.purple .date-head{
+     width: 60rpx;
+    border-radius: 50%;
+    text-align: center;
+    color: #d6f;
+    font-weight: bolder;
+    font-size: 50rpx;
+    margin: 0 auto;
+}
+.blue .date-head{
+     width: 60rpx;
+    border-radius: 50%;
+    text-align: center;
+    color: deepskyblue;
+    font-weight: bolder;
+    font-size: 50rpx;
+    margin: 0 auto;
+}
+.green .date-head{
+    width: 60rpx;
+    border-radius: 50%;
+    text-align: center;
+    color: limegreen;
+    font-weight: bolder;
+    font-size: 50rpx;
+    margin: 0 auto;
+}
+.date-weight{
+    font-size: 22rpx;
+    padding: 15rpx 0;
+}
+.nowDay .date-weight{
+    color: #0cd7bc;
+}
+.one{
+    position: absolute;
+    bottom: 0;
+    right: 5rpx;
+    width: 20rpx;
+    height: 20rpx;
+    border-radius: 50%;
+    background-color: red;
+}
+.two{
+    position: absolute;
+    bottom: 30rpx;
+    right: 5rpx;
+    width: 20rpx;
+    height: 20rpx;
+    border-radius: 50%;
+    background-color: blue;
+}
+.account{
+  margin: 40rpx;
+  background-color: #fff;
+  border-radius: 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+  padding: 40rpx;
+}

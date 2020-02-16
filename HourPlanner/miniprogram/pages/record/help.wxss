@@ -1,0 +1,12 @@
+/* miniprogram/pages/record/help.wxss */
+.column{
+  display: flex;
+  flex-direction: column;
+  padding:20rpx
+}
+.slice{
+  background-color: #ffffff;
+  margin-bottom: 40rpx;
+  border-radius: 50rpx;
+  padding: 30rpx
+}

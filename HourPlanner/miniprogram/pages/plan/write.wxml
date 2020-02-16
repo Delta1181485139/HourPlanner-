@@ -1,0 +1,10 @@
+<!--miniprogram/pages/plan/write.wxml-->
+<button class='confirm' bindtap='finish'><text style='font-size: 25rpx;color:white'>确认</text></button>
+<view class='container'>
+  <input placeholder='在这里输入目标' class='target' maxlength='20' bindinput='target' confirm-type='OK' bindconfirm='title_confirm' value='{{target}}'></input>
+  <text style='margin-left:500rpx;color:#2dccc1;'>{{target_number}}/20</text>
+  <picker mode='date' class='button' start='{{start}}' bindchange='chosing'>
+    <button style='opacity: 0.7;'>选择目标日期{{date}}</button>
+  </picker>
+  
+</view>

@@ -1,0 +1,7 @@
+<view class='container'>
+  <input placeholder='在这里输入标题' class='title' maxlength='20' bindinput='title_number' confirm-type='OK' bindconfirm='title_confirm' value='{{title}}'></input>
+  <text style='margin-left:500rpx;color:#2dccc1;'>{{title_number}}/20</text>
+  <textarea placeholder='在这里输入备注（可忽略）' class='context' maxlength='50' bindinput='context_number' value='{{context}}'></textarea>
+  <text style='margin-left:500rpx;color:#2dccc1;'>{{context_number}}/50</text>
+  <button class='button' bindtap='finish'>完成</button>
+</view>
